@@ -325,6 +325,10 @@ body {
     font-size: 18px;
   }
 
+  .box15 .texto h3 {
+    margin-top: 20%;
+  }
+
   .box16 {
     display: flex;
     width: 90%;
@@ -337,10 +341,14 @@ body {
     font-size: 18px;
   }
 
+  .box16 .texto h3 {
+    margin-top: 10%;
+  }
+
   .box17 {
     display: flex;
     width: 90%;
-    margin: auto;
+    margin: auto; 
     justify-content: space-around;
   }
 
