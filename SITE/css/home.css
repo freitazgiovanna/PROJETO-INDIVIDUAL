@@ -1,0 +1,97 @@
+body {
+    /*CSS DA PAGINA INTEIRA*/
+    margin: 0;
+    padding: 0;
+    font-family: Chinese Rocks;
+    background-color: black;
+  }
+  
+  :root {
+    --tamanho-header: 50px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-footer: 65px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .header {
+    height: var(--tamanho-header);
+    background-color: black
+  }
+
+  
+  .header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: darkred;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 25%;
+    margin-right: 5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: darkred;
+    height: 100px;
+  }
+  
+  .titulo_img{
+    margin-left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+
+  .banner .container img {
+    width: 100%;
+    
+  }
+
+  h2{
+    color: darkred;
+    text-align: center;
+  }
+
+  .historia .container .boxes .box p{
+    color: white;
+    margin-left: 50%;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 665px;
+    font-size: 18px;
+  }
+
+  .personagens img{
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: -50px;
+  }
+
+  .personagens h1{
+    color: darkred;
+    text-align: center;
+  }
