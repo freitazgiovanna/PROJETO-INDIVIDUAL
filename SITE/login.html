@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ColdTech Solutions | Login</title>
+    <title>RDR II | LOGIN</title>
 
-    <link rel="icon" href="img/logo_caminhao_branco.png">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
@@ -20,19 +20,17 @@
 
     <div class="header">
         <div class="container">
-            <h1 class="titulo_img"><img src="img/logo_caminhao_branco.png" alt=""></h1>
+            <a href="index.html" class="titulo_img"><img src="img/logo.png" alt=""></a>
 
             <ul class="navbar">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="simulador.html">Simulador</a>
-                </li>
                 <li>|</li>
                 <li class="agora">
                     <a href="#">Login</a>
                 </li>
+                <li>|</li>
                 <li>
                     <a href="cadastro.html">Cadastro</a>
                 </li>
@@ -40,51 +38,23 @@
         </div>
     </div>
 
-
-    <div class="login">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
+    <div class="box1">  
+        <img src="img/testelogin.png">
+        <div class="texto">
+            <br><br><br><br>
+          <h3><b>A GANGUE ESTÁ TE ESPERANDO</b></h3>
+          <p>EMAIL:</p><input id="input_email" type="text" placeholder="EMAIL@PROVEDOR.COM"> 
+          <p>SENHA:</p><input id="input_senha" type="password" placeholder="SENHA"> 
+          <br><br>
+          <button onclick="logar()" class="botao">ENTRAR</button>
         </div>
-
-        <div class="container">
-            <div class="card card-login">
-                <h2>Olá de volta!</h2>
-                <div class="formulario">
-                    <div class="campo">
-                        <span>E-mail:</span>
-                        <input id="email_input" type="text" placeholder="Login">
-                    </div>
-                    <br>
-                    <div class="campo">
-                        <span>Senha:</span>
-                        <input id="senha_input" type="password" placeholder="********">
-                        <br>
-                    </div>
-                    <button class="botao" onclick="entrar()"><b>ENTRAR</b></button>
-
-                </div>
-                <div id="div_erros_login"></div>
-            </div>
-        </div>
+      
+      </div>
+      <div class="card_erro" id="cardErro">
+        <span id="mensagem_erro"></span>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Direitos reservados à ColdTech Solutions. 2023 &copy;</h4>
-            <span class="version">v1.0.5</span>
-        </div>
-    </div>
-    <!--footer fim-->
 
 </body>
 
@@ -93,9 +63,9 @@
 
 <script>
 
-    function entrar() {
-        var email = email_input.value
-        var senha = senha_input.value
+    function logar() {
+        var email = input_email.value
+        var senha = input_senha.value
 
         if (email == `` || senha == ``) {
             cardErro.style.display = `block`
@@ -118,7 +88,7 @@
             mensagem_erro.innerHTML = "Login realizado com sucesso! Redirecionando para sua Home...";
 
             setTimeout(() => {
-                window.location = `usuario.html`;
+                window.location = `index.html`;
             }, "2000")
 
         }

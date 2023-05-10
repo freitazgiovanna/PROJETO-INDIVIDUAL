@@ -100,8 +100,9 @@ body {
  }
 
  .box1 img{
-  width: 60%;
-
+    width: 115vh;
+    height: 75vh; 
+    
  }
 
  .box1 .texto input {
@@ -122,24 +123,25 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  align-items: center;
-  color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    align-items: center;
+    color: black;
 }
 
 .card_erro {
-  display: none;
-  background-color:white;
-  color: black;
-  width: 20%;
-  position: fixed;
-  border-radius: 10px;
-  border:#c00 3px solid;
-  padding: 10px;
-  text-align: center;
-  margin-left: 5.8%;
-  margin-top: 2%;
+    display: none;
+    background-color:white;
+    color: black;
+    width: 20%;
+    position: fixed;
+    border-radius: 10px;
+    border:#c00 3px solid;
+    padding: 10px;
+    text-align: center;
+    margin-left: 70.4%;
+    margin-top: -5%;
 }
+
