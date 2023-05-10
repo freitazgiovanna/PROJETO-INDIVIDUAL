@@ -1,2 +1,2 @@
 # PROJETO-INDIVIDUAL
-Projeto Individual sobre a música latina.
+PROJETO SOBRE O JOGO RED DEAD REDEMPTION II.
