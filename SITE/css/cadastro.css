@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+
+body {
+    /*CSS DA PAGINA INTEIRA*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    background-color: black;
+  }
+  
+  :root {
+    --tamanho-header: 80px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-footer: 65px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .header {
+    height: var(--tamanho-header);
+    background-color: black
+  }
+
+  
+  .header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #c00;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 25%;
+    margin-right: 2%;
+    list-style: none;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+    color: #c00;
+    height: 100px;
+  }
+  
+  .titulo_img{
+    margin-left: 2%;
+    height: 125%;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+
+  .banner .container img {
+    width: 100%;
+  }
+
+  h2{
+    color: #c00;
+    text-align: center;
+  }
+
+  .box1
+  {
+   display: flex;
+   width: 100%;
+   margin: auto;
+   justify-content: space-evenly;
+}
+
+ .texto {
+   width: 300px;
+   font-size: 17px;
+ }
+
+ .box1 p {
+   color: white;
+   font-size: 18px;
+ }
+
+ .texto h3 {
+   width: 400px;
+   font-size: 27px;
+   color: #c00;
+ }
+
+ .box1 img{
+    width: 50%;
+    height: 50%;
+ }
+
+ .box1 .texto input {
+    padding: 7px 85px;
+    text-align: center;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+ }
