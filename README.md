@@ -1,2 +1,3 @@
 # PROJETO-INDIVIDUAL
 PROJETO SOBRE O JOGO RED DEAD REDEMPTION II.
+![rdrll_fundo_trello](https://github.com/freitazgiovanna/PROJETO-INDIVIDUAL/assets/125298588/ea971c76-a690-4712-b857-be33ad780554)
