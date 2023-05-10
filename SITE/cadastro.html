@@ -78,38 +78,44 @@
     <div class="box1">  
         <div class="texto">
           <h3><b>ENTRE PARA A GANGUE</b></h3>
-          <p>NOME: </p><input type="text" placeholder="NOME">
-          <p>EMAIL:</p><input type="text" placeholder="EMAIL@PROVEDOR.COM"> 
-          <p>SENHA:</p><input type="text" placeholder="SENHA"> 
-          <p>CONFIRMAÇÃO DE SENHA:</p><input type="text" placeholder="CONFIRME SUA SENHA"> 
+          <p>NOME: </p><input id="input_nome" type="text" placeholder="NOME">
+          <p>EMAIL:</p><input id="input_email" type="text" placeholder="EMAIL@PROVEDOR.COM"> 
+          <p>SENHA:</p><input id="input_senha" type="password" placeholder="SENHA"> 
+          <p>CONFIRMAÇÃO DE SENHA:</p><input id="input_csenha" type="password" placeholder="CONFIRME SUA SENHA"> 
+          <br><br>
+          <button onclick="cadastrar()" class="botao">CADASTRAR</button>
         </div>
         <img src="img/teste.jpg">
       </div>
+      <div class="card_erro" id="cardErro">
+        <span id="mensagem_erro"></span>
+    </div>
 </body>
 <script>
 
     function cadastrar() {
-        var email = email_input.value
-        var cnpj = cnpj_input.value
-        var senha = senha_input.value
-        var Csenha = confirmacao_senha_input.value
-        var nome = nome_input.value
-
-        if (email == `` || nome == `` || senha == `` || Csenha == `` || nome == ``) {
+        var nome = input_nome.value
+        var email = input_email.value
+        var senha = input_senha.value
+        var cSenha = input_csenha.value
+    
+        if (email == `` || nome == `` || senha == `` || cSenha == ``) {
             cardErro.style.display = `block`
-            mensagem_erro.innerHTML = `Por favor preencha todos os campos!`
-
-
+            mensagem_erro.innerHTML = `POR FAVOR, PREENCHA TODOS OS CAMPOS!`
 
         } else if (email.indexOf('@') == -1 || email.indexOf('.com') == -1) {
             cardErro.style.display = 'block'
-            mensagem_erro.innerHTML = `email inválido!`
+            mensagem_erro.innerHTML = `EMAIL INVÁLIDO`
 
-        } else if (cnpj.lenght < 14 || senha.lenght < 8 || Csenha.lenght != senha.lenght) {
+        } else if (senha.length < 8) {
             cardErro.style.display = 'block'
-            mensagem_erro.innerHTML = `Senha ou cnpj inválido`
+            mensagem_erro.innerHTML = `A SENHA PRECISA TER PELO MENOS 8 CARACTERES`
 
-        } else {
+        } else if (cSenha != senha) {
+            cardErro.style.display = 'block'
+            mensagem_erro.innerHTML = `A CONFIRMAÇÃO DE SENHA ESTÁ DIFERENTE DA SENHA..`
+
+        }else {
 
             cardErro.style.display = "block";
 
@@ -121,7 +127,7 @@
 
         }
 
-
+     
     }
 
 

@@ -100,8 +100,8 @@ body {
  }
 
  .box1 img{
-    width: 50%;
-    height: 50%;
+    width: 120vh;
+    height: 80vh;
  }
 
  .box1 .texto input {
@@ -111,3 +111,35 @@ body {
     border-radius: 10px;
     font-family: 'Chinese Rocks Rg', sans-serif;
  }
+
+ .box1 .texto .botao {
+    background-color: #c00;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    width: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+  color: black;
+}
+
+.card_erro {
+  display: none;
+  background-color:white;
+  color: black;
+  width: 20%;
+  position: fixed;
+  border-radius: 10px;
+  border:#c00 3px solid;
+  padding: 10px;
+  text-align: center;
+  margin-left: 7.7%;
+  margin-top: -2%;
+}
