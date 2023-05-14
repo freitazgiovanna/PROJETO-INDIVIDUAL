@@ -1,0 +1,475 @@
+@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+
+body {
+    /*CSS DA PAGINA INTEIRA*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    background-color: black;
+  }
+  
+  :root {
+    --tamanho-header: 80px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-footer: 65px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .header {
+    height: var(--tamanho-header);
+    background-color: black
+  }
+
+  
+  .header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #c00;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 25%;
+    margin-right: 2%;
+    list-style: none;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+    color: #c00;
+    height: 100px;
+  }
+  
+  .titulo_img{
+    margin-left: 2%;
+    height: 125%;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+
+  .banner .container img {
+    width: 100%;
+  }
+
+  h2{
+    color: #c00;
+    text-align: center;
+  }
+
+  .historia .container .boxes .box p{
+    color: white;
+    margin-left: 50%;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 665px;
+    font-size: 18px;
+  }
+
+  .personagens img{
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: -5%;
+  }
+
+  .personagens h1 {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 2%;
+    margin-top: -2%;
+    background-image: url(../img/teste.jpg);
+  }
+
+  .personagens p {
+    color: white;
+    text-align: center;
+    margin-top: -15%;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 665px;
+    font-size: 18px;
+    margin-left: 25%;
+  }
+
+  .personagens h2{
+    color: white;
+  }
+
+  .box1
+   {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+  .texto {
+    width: 300px;
+    font-size: 17px;
+  }
+
+  .box1 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .texto h3 {
+    width: 400px;
+    font-size: 25px;
+    color: #c00;
+  }
+
+  .box2 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+  .box2 p {
+    color: white;
+    font-size: 18px;
+}
+
+  .box3 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box3 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box3 .texto h3 {
+    margin-top: 25%;
+  }
+
+  .box4 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box4 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box4 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box5 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box5 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box6 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box6 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box7 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box7 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box8 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box8 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box9 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box9 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box9 .texto h3 {
+    margin-top: 15%;
+  }
+
+  .box10 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box10 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box11 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box11 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box12 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box12 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box13 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box13 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box13 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box14 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box14 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box15 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box15 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box15 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box16 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box16 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box16 .texto h3 {
+    margin-top: 10%;
+  }
+
+  .box17 {
+    display: flex;
+    width: 90%;
+    margin: auto; 
+    justify-content: space-around;
+  }
+
+  .box17 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box17 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box18 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box18 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box18 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box19 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box19 p {
+    color: white;
+    font-size: 18px;
+  }  
+
+  .box19 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box20 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box20 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box20 .texto h3 {
+    margin-top: 20%;
+  }
+
+  .box21 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box21 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box22 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box22 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box23 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box23 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .saiba_mais h1{
+    color: #c00;
+    text-align: center;
+  }
+
+  .saiba_mais .botao .botao_membro{
+    background-color: #c00;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    width: 300px;
+    margin-left: 39%;
+  }
+
+  .saiba_mais h5{
+    color:goldenrod;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .saiba_mais p{
+    color: white;
+    margin-left: 25%;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 665px;
+    font-size: 18px;
+  }
