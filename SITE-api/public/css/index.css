@@ -98,7 +98,7 @@ body {
     height: 300px;
     padding: 2%;
     margin-top: -2%;
-    background-image: url(../img/teste.jpg);
+    background-image: url(../assets/imgs/teste.jpg);
   }
 
   .personagens p {
@@ -434,9 +434,10 @@ body {
 
   .box23 {
     display: flex;
-    width: 90%;
+    width: 90%;   
     margin: auto;
     justify-content: space-around;
+
   }
 
   .box23 p {
@@ -473,3 +474,4 @@ body {
     width: 665px;
     font-size: 18px;
   }
+
