@@ -99,28 +99,6 @@ body {
     justify-content: left;
   }
 
- 
-  .usuario h1{
-    color: #c00;
-    text-align: center;
- 
-  }
-
-  .usuario p{
-    color: white;
-    text-align: center;
-    text-align: center;
-    padding-bottom: 30px;
-    width: 665px;
-    font-size: 18px;
-    margin-left: 25%;
-    
-}
-
-  span{
-    color: goldenrod;
-  }
-
   .titulo_img img{
     border-radius: 50%; 
-  }
+ }

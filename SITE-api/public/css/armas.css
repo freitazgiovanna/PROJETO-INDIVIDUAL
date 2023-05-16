@@ -61,6 +61,7 @@ body {
     margin-left: -27%;
     }
 
+  
   .header .container {
     justify-content: space-between;
     align-items: center;
@@ -99,28 +100,114 @@ body {
     justify-content: left;
   }
 
- 
-  .usuario h1{
-    color: #c00;
-    text-align: center;
- 
-  }
+   .titulo_img img{
+    border-radius: 50%; 
+   }
 
-  .usuario p{
+  .armas h1{
     color: white;
     text-align: center;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 2%;
+    
+}
+
+.armas{
+  background-image: url(../assets/imgs/teste.jpg);
+  margin-top: -1.5%;
+}
+
+  .armas p {
+    color: white;
+    text-align: center;
+    margin-top: -12%;
     text-align: center;
     padding-bottom: 30px;
     width: 665px;
     font-size: 18px;
     margin-left: 25%;
-    
+  }
+
+  .armas img{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+    color: #c00;
+  }
+
+  .box1{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box1 img{
+    width: 20%;
+  }
+
+  .texto{
+    width: 300px;
+    font-size: 17px;
+  }
+
+  .texto h3 {
+    width: 400px;
+    font-size: 25px;
+    color: #c00;
+  }
+
+  .box2 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
 }
 
-  span{
-    color: goldenrod;
+  .box2 p {
+    color: white;
+    font-size: 18px;
+}
+
+  .box2 img{
+    width: 50%;
   }
 
-  .titulo_img img{
-    border-radius: 50%; 
+  .box2 .texto h3 {
+    margin-top: 25%;
   }
+
+  .personagens img{
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: -5%;
+  }
+
+  .botao .botao_membro {
+    background-color: #c00;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    width: 300px;
+    margin-left: 39%;
+}
+
+  .box3 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .box3 p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .box3 img{
+    width: 50%;
+  }
+

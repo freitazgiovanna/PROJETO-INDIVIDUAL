@@ -143,3 +143,19 @@ body {
   margin-left: 5.8%;
   margin-top: 2%;
 }
+
+.header li a{
+  color:#c00;
+  text-decoration:none;
+  padding:5px 10px; 
+  display:block;
+}
+
+.header li a:hover{
+  margin-top: 2%;
+  background: black;
+  color:goldenrod;
+  -moz-box-shadow:0 3px 10px 0 goldenrod;
+  -webkit-box-shadow:0 3px 10px 0 goldenrod;
+  text-shadow:0px 0px 5px goldenrod;
+}
