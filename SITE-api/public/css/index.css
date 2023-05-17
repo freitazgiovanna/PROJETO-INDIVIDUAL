@@ -1,496 +1,246 @@
-@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+@import url("https://fonts.cdnfonts.com/css/chinese-rocks");
 
 body {
-    /*CSS DA PAGINA INTEIRA*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    background-color: black;
-  }
-  
-  :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-  }
-  
-  .header {
-    height: var(--tamanho-header);
-    background-color: black
-  }
-
-  
-  .header .container {
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: black;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #c00;
-  }
-  
-  .agora {
-    font-weight: 800;
-  }
-  
-  .navbar {
-    width: 25%;
-    margin-right: 2%;
-    list-style: none;
-    display: flex;
-    justify-content:  space-evenly;
-    align-items: center;
-    color: #c00;
-    height: 100px;
-  }
-  
-  .titulo_img{
-    margin-left: 2%;
-    height: 125%;
-    display: flex;
-    justify-content: left;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-
-  .banner .container img {
-    width: 100%;
-  }
-
-  h2{
-    color: #c00;
-    text-align: center;
-  }
-
-  .historia .container .boxes .box p{
-    color: white;
-    margin-left: 50%;
-    text-align: center;
-    padding-bottom: 30px;
-    width: 665px;
-    font-size: 18px;
-  }
-
-  .personagens img{
-    width: 50%;
-    align-items: center;
-    margin-left: 25%;
-    margin-top: -5%;
-  }
-
-  .personagens h1 {
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    height: 300px;
-    padding: 2%;
-    margin-top: -2%;
-    background-image: url(../assets/imgs/teste.jpg);
-  }
-
-  .personagens p {
-    color: white;
-    text-align: center;
-    margin-top: -15%;
-    text-align: center;
-    padding-bottom: 30px;
-    width: 665px;
-    font-size: 18px;
-    margin-left: 25%;
-  }
-
-  .personagens h2{
-    color: white;
-  }
-
-  .box1
-   {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
+  /*CSS DA PAGINA INTEIRA*/
+  margin: 0;
+  padding: 0;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  background-color: black;
 }
 
-  .texto {
-    width: 300px;
-    font-size: 17px;
-  }
-
-  .box1 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .texto h3 {
-    width: 400px;
-    font-size: 25px;
-    color: #c00;
-  }
-
-  .box2 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
+:root {
+  --tamanho-header: 80px;
+  --tamanho-banner: calc(
+    100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px
+  );
+  --tamanho-simulador: calc(
+    100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px
+  );
+  --tamanho-login: calc(
+    100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px
+  );
+  --tamanho-footer: 65px;
 }
 
-  .box2 p {
-    color: white;
-    font-size: 18px;
+.container {
+  display: flex;
+  width: 100%;
+  margin: auto;
 }
 
-  .box3 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box3 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box3 .texto h3 {
-    margin-top: 25%;
-  }
-
-  .box4 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box4 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box4 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box5 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box5 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box6 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box6 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box7 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box7 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box8 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box8 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box9 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box9 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box9 .texto h3 {
-    margin-top: 15%;
-  }
-
-  .box10 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box10 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box11 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box11 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box12 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box12 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box13 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box13 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box13 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box14 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box14 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box15 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box15 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box15 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box16 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box16 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box16 .texto h3 {
-    margin-top: 10%;
-  }
-
-  .box17 {
-    display: flex;
-    width: 90%;
-    margin: auto; 
-    justify-content: space-around;
-  }
-
-  .box17 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box17 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box18 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box18 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box18 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box19 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box19 p {
-    color: white;
-    font-size: 18px;
-  }  
-
-  .box19 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box20 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box20 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box20 .texto h3 {
-    margin-top: 20%;
-  }
-
-  .box21 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box21 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box22 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  .box22 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .box23 {
-    display: flex;
-    width: 90%;   
-    margin: auto;
-    justify-content: space-around;
-
-  }
-
-  .box23 p {
-    color: white;
-    font-size: 18px;
-  }
-
-  .saiba_mais h1{
-    color: #c00;
-    text-align: center;
-  }
-
-  .saiba_mais .botao .botao_membro{
-    background-color: #c00;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 30px;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    width: 300px;
-    margin-left: 39%;
-  }
-
-  .saiba_mais h5{
-    color:goldenrod;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .saiba_mais p{
-    color: white;
-    margin-left: 25%;
-    text-align: center;
-    padding-bottom: 30px;
-    width: 665px;
-    font-size: 18px;
-  }
-
-  .header li a{
-    color:#c00;
-    text-decoration:none;
-    padding:5px 10px; 
-    display:block;
-  }
-
-  .header li a:hover{
-    margin-top: 2%;
-    background: black;
-    color:goldenrod;
-    -moz-box-shadow:0 3px 10px 0 goldenrod;
-    -webkit-box-shadow:0 3px 10px 0 goldenrod;
-    text-shadow:0px 0px 5px goldenrod;
+.header {
+  height: var(--tamanho-header);
+  background-color: black;
 }
 
-  .titulo_img img{
-    border-radius: 50%; 
- }
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: #c00;
+}
+
+.agora {
+  font-weight: 800;
+}
+
+.navbar {
+  width: 25%;
+  margin-right: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #c00;
+  height: 100px;
+}
+
+.titulo_img {
+  margin-left: 2%;
+  height: 125%;
+  display: flex;
+  justify-content: left;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.banner .container img {
+  width: 100%;
+}
+
+h2 {
+  color: #c00;
+  text-align: center;
+}
+
+.historia .container .boxes .box p {
+  color: white;
+  margin-left: 50%;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 18px;
+}
+
+.personagens img {
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: -5%;
+}
+
+.personagens h1 {
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 2%;
+  margin-top: -2%;
+  background-image: url(../assets/imgs/teste.jpg);
+}
+
+.personagens p {
+  color: white;
+  text-align: center;
+  margin-top: -15%;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 18px;
+  margin-left: 25%;
+}
+
+h1 {
+  color: #c00;
+  font-size: 60px;
+  text-align: center;
+}
+
+.personagens h2 {
+  color: white;
+}
+
+.saiba_mais h1 {
+  color: #c00;
+  text-align: center;
+}
+
+.saiba_mais .botao .botao_membro {
+  background-color: #c00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  width: 300px;
+  margin-left: 39%;
+}
+
+.saiba_mais h5 {
+  color: goldenrod;
+  font-size: 15px;
+  text-align: center;
+}
+
+.saiba_mais p {
+  color: white;
+  margin-left: 25%;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 18px;
+}
+
+.header li a {
+  color: #c00;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.header li a:hover {
+  margin-top: 2%;
+  background: black;
+  color: goldenrod;
+  -moz-box-shadow: 0 3px 10px 0 goldenrod;
+  -webkit-box-shadow: 0 3px 10px 0 goldenrod;
+  text-shadow: 0px 0px 5px goldenrod;
+}
+
+.titulo_img img {
+  border-radius: 50%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.modal_content {
+  width: 55%;
+  height: 55%;
+  margin: 15% auto;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.texto_modal {
+  font-size: 18px;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  padding: 0% 5%;
+  color: white;
+}
+
+.texto_modal h3 {
+  color: goldenrod;
+}
+
+.card {
+  display: flex;
+}
+
+.card img {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.card_arthur :hover,
+.card_dutch :hover,
+.card_hosea :hover,
+.card_molly :hover,
+.card_susan :hover,
+.card_pearson :hover,
+.card_micah :hover,
+.card_charles :hover,
+.card_bill :hover,
+.card_leopold :hover {
+  transform: scale(1.08);
+  transition: 0.4s ease-in-out;
+}
+
+.card_bill h3,
+.card_charles h3,
+.card_micah h3,
+.card_pearson h3,
+.card_susan h3,
+.card_molly h3,
+.card_hosea h3,
+.card_dutch h3,
+.card_arthur h3,
+.card_leopold h3 {
+  color: #c00;
+  text-align: center;
+}

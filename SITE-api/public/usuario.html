@@ -18,7 +18,7 @@
     <div class="header">
         <div class="container">
             <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
-                Olá,usuário!</a>
+                Olá,<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li class="agora">
                     <a href="usuario.html">USUÁRIO</a>
@@ -53,5 +53,12 @@
         </div>
     </div>
     </div>
+</body>
+</html>
 
+    <script>
+
+        nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+    </script>
     
