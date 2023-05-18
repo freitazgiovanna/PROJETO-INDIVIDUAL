@@ -212,10 +212,22 @@ h1 {
   display: flex;
 }
 
+.card4 {
+  display: flex;
+
+}
+
 .card img {
   width: 70%;
   margin-left: 15%;
 }
+
+.card4 img {
+  width: 50%;
+  margin-left: 22%;
+}
+
+
 
 .card_arthur :hover,
 .card_dutch :hover,
@@ -226,7 +238,21 @@ h1 {
 .card_micah :hover,
 .card_charles :hover,
 .card_bill :hover,
-.card_leopold :hover {
+.card_leopold :hover,
+.card_john :hover,
+.card_abigail :hover,
+.card_jack :hover,
+.card_karen :hover,
+.card_javier :hover,
+.card_tilly :hover,
+.card_uncle :hover,
+.card_mary :hover,
+.card_lenny :hover,
+.card_josiah :hover,
+.card_reverend :hover,
+.card_sean :hover,
+.card_sadie :hover
+ {
   transform: scale(1.08);
   transition: 0.4s ease-in-out;
 }
@@ -240,7 +266,31 @@ h1 {
 .card_hosea h3,
 .card_dutch h3,
 .card_arthur h3,
-.card_leopold h3 {
+.card_leopold h3,
+.card_john h3,
+.card_abigail h3,
+.card_jack h3,
+.card_karen h3,
+.card_javier h3,
+.card_tilly h3,
+.card_uncle h3,
+.card_mary h3,
+.card_lenny h3,
+.card_josiah h3,
+.card_reverend h3,
+.card_sean h3,
+.card_sadie h3
+{
   color: #c00;
   text-align: center;
+}
+
+
+.card_reverend h3,
+.card_sean h3,
+.card_sadie h3
+{
+  color: #c00;
+  text-align: center;
+  margin-left: -7%;
 }
