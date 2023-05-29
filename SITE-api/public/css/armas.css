@@ -114,7 +114,7 @@ body {
 }
 
 .armas{
-  background-image: url(../assets/imgs/teste.jpg);
+  background-image: url(../assets/imgs/fundo_preto_vermelho.jpg);
   margin-top: -1.5%;
 }
 
@@ -211,3 +211,19 @@ body {
     width: 50%;
   }
 
+
+  ::-webkit-scrollbar{
+    width: 10px;
+    }
+  
+  ::-webkit-scrollbar-track{
+    background-color: black;
+    }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #c00;
+    }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(204, 0, 0, 0.562);
+    }

@@ -160,3 +160,19 @@ body {
   -webkit-box-shadow:0 3px 10px 0 goldenrod;
   text-shadow:0px 0px 5px goldenrod;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  }
+
+::-webkit-scrollbar-track{
+  background-color: black;
+  }
+
+::-webkit-scrollbar-thumb{
+  background-color: #c00;
+  }
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(204, 0, 0, 0.562);
+  }

@@ -1,104 +1,162 @@
 @import url('https://fonts.cdnfonts.com/css/chinese-rocks');
 
 body {
-    /*CSS DA PAGINA INTEIRA*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    background-color: black;
-  }
-  
-  :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    
-  }
-  
-  .header {
-    height: var(--tamanho-header);
-    background-color: black;
-  }
-
-  .header li a{
-    color:goldenrod;
-    text-decoration:none;
-    padding:5px 10px; 
-    display:block;
-  }
-
-  .header li a:hover{
-    margin-top: 2%;
-    background: black;
-    color:goldenrod;
-    -moz-box-shadow:0 3px 10px 0 goldenrod;
-    -webkit-box-shadow:0 3px 10px 0 goldenrod;
-    text-shadow:0px 0px 5px goldenrod;
+  /*CSS DA PAGINA INTEIRA*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: black;
 }
 
-  .header li  ul{
-    margin-left: 2%;
-    position:absolute;
-    display:none;
-    }
+:root {
+  --tamanho-header: 80px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-footer: 65px;
+}
 
-  .header li:hover ul, .header li.over ul{
-    display:block;
-  }
+.container {
+  display: flex;
+  width: 100%;
+  margin: auto;
 
-  .header li ul li{
-    border:1px solid goldenrod;
-    display:block;
-    width:150px;
-    margin-left: -27%;
-    }
-  
-  .header .container {
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: black;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #c00;
-  }
+}
 
-  .header .container a{
-    color: #c00;
-  }
-  
-  .agora {
-    font-weight: 800;
-  }
-  
-  .navbar {
-    width: 25%;
-    margin-right: 2%;
-    list-style: none;
-    display: flex;
-    justify-content:  space-evenly;
-    align-items: center;
-    color: #c00;
-    height: 100px;
-  }
-  
-  .titulo_img{
-    margin-left: 2%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-  }
+.header {
+  height: var(--tamanho-header);
+  background-color: black;
+}
 
-  .titulo_img img{
-    border-radius: 50%; 
- }
+.header li a {
+  color: goldenrod;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.header li a:hover {
+  margin-top: 2%;
+  background: black;
+  color: goldenrod;
+  -moz-box-shadow: 0 3px 10px 0 goldenrod;
+  -webkit-box-shadow: 0 3px 10px 0 goldenrod;
+  text-shadow: 0px 0px 5px goldenrod;
+}
+
+.header li ul {
+  margin-left: 2%;
+  position: absolute;
+  display: none;
+}
+
+.header li:hover ul,
+.header li.over ul {
+  display: block;
+}
+
+.header li ul li {
+  border: 1px solid goldenrod;
+  display: block;
+  width: 150px;
+  margin-left: -27%;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: #c00;
+}
+
+.header .container a {
+  color: #c00;
+}
+
+.agora {
+  font-weight: 800;
+}
+
+.navbar {
+  width: 25%;
+  margin-right: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #c00;
+  height: 100px;
+}
+
+.titulo_img {
+  margin-left: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.titulo_img img {
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(204, 0, 0, 0.562);
+}
+
+.momentos img {
+  width: 100%;
+  height: 50vh;
+}
+
+.momentos h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin-top: -15%;
+}
+
+.momentos p {
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 18px;
+  margin-left: 25%;
+}
+
+.chamada h1{
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 40px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.botao{
+  background-color: #c00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  width: 300px;
+  margin-left: 39%;
+}
