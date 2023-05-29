@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="assets/imgs/logo.png">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,usuário!</a>
+            <ul class="navbar"></a>
+                <li>
+                    <a href="momentos.html">momentos</a>
+                    <ul>
+                        <li><a href="armas.html">armas</a></li>
+                        <li><a href="animais.html">animais</a></li>
+                        <li><a href="usuario.html">usuário</a></li>
+                        <li><a href="trilhasonora.html">trilha sonora</a></li>
+                    </ul>
+                </li>
+                <li>|</li>
+                <li  class="agora">
+                    <a href="quiz.html">SEU PERSONAGEM</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">SAIR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <h1>Escolha de Personagem</h1>
+    <label for="personagemSelect">Escolha um personagem:</label>
+    <button class="botao" onclick="exibirFotoEFrase()">Exibir</button>
+    <br><br>
+    <select id="personagemSelect"> 
+      <option value="Arthur">Arthur Morgan</option>
+      <option value="Luigi">Luigi</option>
+      <option value="Peach">Peach</option>
+    </select>
+    <br><br>
+    <img id="fotoPersonagem" style="width: 300px;">
+    <p id="frasePersonagem"></p>
+</body>
+</html>
+
+<script>
+ // Vetor de personagens com suas fotos
+const personagens = [
+  { nome: "Arthur", foto: "assets/imgs/arthur_morgan.png", frase: "It's-a me, Arthur Morgan!" },
+  { nome: "Luigi", foto: "luigi.jpg" },
+  { nome: "Peach", foto: "peach.jpg" }
+];
+
+// Função para exibir a foto do personagem
+function exibirFotoEFrase() {
+  // Obtendo a escolha do usuário
+  const select = document.getElementById("personagemSelect");
+  const escolha = select.value;
+
+  // Exibindo a foto correspondente
+  const imagem = document.getElementById("fotoPersonagem");
+
+  // Buscando o personagem no vetor
+  const personagem = personagens.find(p => p.nome === escolha);
+
+  // Verificando se o personagem foi encontrado
+  if (personagem) {
+    imagem.src = personagem.foto;
+    imagem.alt = `Foto do ${personagem.nome}`;
+    const fraseElement = document.getElementById("frasePersonagem");
+    fraseElement.textContent = personagem.frase;
+  }
+}
+
+</script>

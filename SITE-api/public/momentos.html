@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RDR II | USUÁRIO</title>
+    <title>RDR II | MOMENTOS</title>
 
     <link rel="icon" href="assets/imgs/logo.png">
     <link rel="stylesheet" href="css/momentos.css">
@@ -31,7 +31,7 @@
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="dashboards.html">QUIZ</a>
+                    <a href="quiz.html">SEU PERSONAGEM</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -52,8 +52,10 @@
         <h1>Clique no botão e veja quantas imagens de momentos épicos do rdr ii</h1>
     </div>
 
+    quantas fotos raras você deseja ver? <input id="iput_fotos_raras">
+
     <button onclick="sortearImagem()" class="botao">
-        Sortear imagem
+        Sortear MOMENTOS
     </button>
     <div id="imagem"></div>
 
@@ -67,6 +69,8 @@
     ]
 
     function sortearImagem() {
+
+        for (var i = 0; i < listaImagens.length; i++) {
         if (listaImagens.length > 0) {
             var posicaoSorteada = parseInt(Math.random() * listaImagens.length);
 
@@ -74,7 +78,7 @@
         }
     }
     
-
+    }
 
 
     </script>

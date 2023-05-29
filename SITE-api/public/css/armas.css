@@ -1,229 +1,230 @@
 @import url('https://fonts.cdnfonts.com/css/chinese-rocks');
 
 body {
-    /*CSS DA PAGINA INTEIRA*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    background-color: black;
-  }
-  
-  :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    
-  }
-  
-  .header {
-    height: var(--tamanho-header);
-    background-color: black;
-  }
-
-  .header li a{
-    color:goldenrod;
-    text-decoration:none;
-    padding:5px 10px; 
-    display:block;
-  }
-
-  .header li a:hover{
-    margin-top: 2%;
-    background: black;
-    color:goldenrod;
-    -moz-box-shadow:0 3px 10px 0 goldenrod;
-    -webkit-box-shadow:0 3px 10px 0 goldenrod;
-    text-shadow:0px 0px 5px goldenrod;
+  /*CSS DA PAGINA INTEIRA*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: black;
 }
 
-  .header li  ul{
-    margin-left: 2%;
-    position:absolute;
-    display:none;
-    }
-
-  .header li:hover ul, .header li.over ul{
-    display:block;
-  }
-
-  .header li ul li{
-    border:1px solid goldenrod;
-    display:block;
-    width:150px;
-    margin-left: -27%;
-    }
-
-  
-  .header .container {
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: black;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #c00;
-  }
-
-  .header .container a{
-    color: #c00;
-  }
-  
-  .agora {
-    font-weight: 800;
-  }
-  
-  .navbar {
-    width: 25%;
-    margin-right: 2%;
-    list-style: none;
-    display: flex;
-    justify-content:  space-evenly;
-    align-items: center;
-    color: #c00;
-    height: 100px;
-  }
-  
-  .titulo_img{
-    margin-left: 2%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-  }
-
-   .titulo_img img{
-    border-radius: 50%; 
-   }
-
-  .armas h1{
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    height: 300px;
-    padding: 2%;
-    
+:root {
+  --tamanho-header: 80px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-footer: 65px;
 }
 
-.armas{
+.container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+
+}
+
+.header {
+  height: var(--tamanho-header);
+  background-color: black;
+}
+
+.header li a {
+  color: goldenrod;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.header li a:hover {
+  margin-top: 2%;
+  background: black;
+  color: goldenrod;
+  -moz-box-shadow: 0 3px 10px 0 goldenrod;
+  -webkit-box-shadow: 0 3px 10px 0 goldenrod;
+  text-shadow: 0px 0px 5px goldenrod;
+}
+
+.header li ul {
+  margin-left: 2%;
+  position: absolute;
+  display: none;
+}
+
+.header li:hover ul,
+.header li.over ul {
+  display: block;
+}
+
+.header li ul li {
+  border: 1px solid goldenrod;
+  display: block;
+  width: 150px;
+  margin-left: -27%;
+}
+
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: #c00;
+}
+
+.header .container a {
+  color: #c00;
+}
+
+.agora {
+  font-weight: 800;
+}
+
+.navbar {
+  width: 25%;
+  margin-right: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #c00;
+  height: 100px;
+}
+
+.titulo_img {
+  margin-left: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.titulo_img img {
+  border-radius: 50%;
+}
+
+.armas h1 {
+  color: #c00;
+  text-align: center;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 2%;
+
+}
+
+.armas {
   background-image: url(../assets/imgs/fundo_preto_vermelho.jpg);
   margin-top: -1.5%;
 }
 
-  .armas p {
-    color: white;
-    text-align: center;
-    margin-top: -12%;
-    text-align: center;
-    padding-bottom: 30px;
-    width: 665px;
-    font-size: 18px;
-    margin-left: 25%;
-  }
-
-  .armas img{
-    width: 100%;
-  }
-
-  h1{
-    text-align: center;
-    color: #c00;
-  }
-
-  .box1{
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .box1 img{
-    width: 20%;
-  }
-
-  .texto{
-    width: 300px;
-    font-size: 17px;
-  }
-
-  .texto h3 {
-    width: 400px;
-    font-size: 25px;
-    color: #c00;
-  }
-
-  .box2 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
+.armas p {
+  color: white;
+  text-align: center;
+  margin-top: -12%;
+  text-align: center;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 18px;
+  margin-left: 25%;
 }
 
-  .box2 p {
-    color: white;
-    font-size: 18px;
+.armas img {
+  width: 100%;
 }
 
-  .box2 img{
-    width: 50%;
-  }
-
-  .box2 .texto h3 {
-    margin-top: 25%;
-  }
-
-  .personagens img{
-    width: 50%;
-    align-items: center;
-    margin-left: 25%;
-    margin-top: -5%;
-  }
-
-  .botao .botao_membro {
-    background-color: #c00;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 30px;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    width: 300px;
-    margin-left: 39%;
+h1 {
+  text-align: center;
+  color:goldenrod;
 }
 
-  .box3 {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-  }
+.box1 {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .box3 p {
-    color: white;
-    font-size: 18px;
-  }
+.box1 img {
+  width: 20%;
+}
 
-  .box3 img{
-    width: 50%;
-  }
+.texto {
+  width: 300px;
+  font-size: 17px;
+}
+
+.texto h3 {
+  width: 400px;
+  font-size: 25px;
+  color: #c00;
+}
+
+.box2 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.box2 p {
+  color: white;
+  font-size: 18px;
+}
+
+.box2 img {
+  width: 50%;
+}
+
+.box2 .texto h3 {
+  margin-top: 25%;
+}
+
+.personagens img {
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: -5%;
+}
+
+.botao .botao_membro {
+  background-color: #c00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  width: 300px;
+  margin-left: 39%;
+}
+
+.box3 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.box3 p {
+  color: white;
+  font-size: 18px;
+}
+
+.box3 img {
+  width: 50%;
+}
 
 
-  ::-webkit-scrollbar{
-    width: 10px;
-    }
-  
-  ::-webkit-scrollbar-track{
-    background-color: black;
-    }
-  
-  ::-webkit-scrollbar-thumb{
-    background-color: #c00;
-    }
-  
-  ::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(204, 0, 0, 0.562);
-    }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(204, 0, 0, 0.562);
+}
