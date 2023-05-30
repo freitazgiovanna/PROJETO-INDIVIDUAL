@@ -54,42 +54,87 @@
 <script>
 
     function cadastrar() {
-        var nome = input_nome.value
-        var email = input_email.value
-        var senha = input_senha.value
-        var cSenha = input_csenha.value
+        var nomeVar = input_nome.value
+        var emailVar = input_email.value
+        var senhaVar = input_senha.value
+        var cSenhaVar = input_csenha.value
     
-        if (email == `` || nome == `` || senha == `` || cSenha == ``) {
+        if (emailVar == `` || nomeVar == `` || senhaVar == `` || cSenhaVar == ``) {
             cardErro.style.display = `block`
             mensagem_erro.innerHTML = `POR FAVOR, PREENCHA TODOS OS CAMPOS!`
 
-        } else if (email.indexOf('@') == -1 || email.indexOf('.com') == -1) {
+            finalizarAguardar();
+            return false;
+
+        } else if (emailVar.indexOf('@') == -1 || emailVar.indexOf('.com') == -1) {
             cardErro.style.display = 'block'
             mensagem_erro.innerHTML = `EMAIL INVÁLIDO`
+ 
+            finalizarAguardar();
+            return false;
 
-        } else if (senha.length < 8) {
+        } else if (senhaVar.length < 8) {
             cardErro.style.display = 'block'
             mensagem_erro.innerHTML = `A SENHA PRECISA TER PELO MENOS 8 CARACTERES`
+            
+            finalizarAguardar();
+            return false;
 
-        } else if (cSenha != senha) {
+        } else if (cSenhaVar != senhaVar) {
             cardErro.style.display = 'block'
             mensagem_erro.innerHTML = `A CONFIRMAÇÃO DE SENHA ESTÁ DIFERENTE DA SENHA..`
 
+            finalizarAguardar();
+            return false;
+
+        
         }else {
-
-            cardErro.style.display = "block";
-
-            mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-            setTimeout(() => {
-                window.location = `login.html`;
-            }, "2000")
-
+            setInterval(sumirMensagem, 5000)
         }
 
-     
+         // Enviando o valor da nova input
+         fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
     }
 
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
 
-
+     
+    
 </script>
