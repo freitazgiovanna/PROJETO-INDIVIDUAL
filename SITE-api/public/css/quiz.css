@@ -127,19 +127,22 @@ body {
     font-size: 30px;
     font-family: "Chinese Rocks Rg", sans-serif;
     width: 300px;
-    margin-left: 25%;   
+    position: relative;
+    left: 25%;   
     
   }
 
   #personagemSelect{
     font-family: "Chinese Rocks Rg", sans-serif;
     background-color: #c00;
-    font-size: 25px ;
-    margin-left: 41%;
+    font-size: 25px;
+    position: relative;
+    left: 41%;
   }
 
   #fotoPersonagem{
-    margin-left:37%; 
+    position: relative;
+    left:37%; 
   }
 
   #frasePersonagem{
