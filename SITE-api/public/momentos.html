@@ -63,22 +63,44 @@
     <script>
 
         var listaImagens = [
-        "<img src='assets/imgs_momentos/capa_arthur.jfif' style='width: 200px;'>",
-        "<img src='assets/imgs_momentos/vista_barco.jfif' style='width: 200px;'>"
-        
-    ]
+            "<img src='assets/imgs_momentos/capa_arthur.jfif' style='width: 200px;'>",
+            "<img src='assets/imgs_momentos/vista_barco.jfif' style='width: 200px;'>"
 
-    function sortearImagem() {
+        ]
 
-        for (var i = 0; i < listaImagens.length; i++) {
-        if (listaImagens.length > 0) {
-            var posicaoSorteada = parseInt(Math.random() * listaImagens.length);
+        function sortearImagem() {
 
-            imagem.innerHTML = listaImagens[posicaoSorteada];
+            var qtdImagens = Number(iput_fotos_raras.value);
+
+            //     for (var i = 0; i < listaImagens.length; i++) {
+            //     if (listaImagens.length > 0) {
+            //         var posicaoSorteada = parseInt(Math.random() * listaImagens.length);
+
+            //         imagem.innerHTML = listaImagens[posicaoSorteada];
+            //     }
+            // }
+
+            var listaImagensSorteadas = [];
+            imagem.innerHTML = ""
+
+            if (qtdImagens <= listaImagens.length) {
+                for (var i = 0; i < qtdImagens; i++) {
+                    var posicaoSorteada = parseInt(Math.random() * listaImagens.length);
+                    var imgSorteada = listaImagens[posicaoSorteada];
+
+                    console.log(posicaoSorteada)
+                    console.log(imgSorteada)
+
+                    if (listaImagensSorteadas.indexOf(imgSorteada) > -1) {
+                        i--
+                    } else {
+                        listaImagensSorteadas.push(imgSorteada)
+                        imagem.innerHTML += imgSorteada;
+                    }
+                }
+            }
+
         }
-    }
-    
-    }
 
 
     </script>
