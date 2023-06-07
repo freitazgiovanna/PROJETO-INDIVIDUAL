@@ -14,3 +14,4 @@ CREATE TABLE personagem(
 idPersonagem INT PRIMARY KEY auto_increment,
 nomePersonagem VARCHAR(45)
 );
+ SELECT * FROM usuario;
