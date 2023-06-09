@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="icon" href="assets/imgs/logo.png">
     <link rel="stylesheet" href="css/quiz.css">
 </head>
+
 <body>
 
     <div class="header">
@@ -26,7 +28,7 @@
                     </ul>
                 </li>
                 <li>|</li>
-                <li  class="agora">
+                <li class="agora">
                     <a href="quiz.html">SEU PERSONAGEM</a>
                 </li>
                 <li>|</li>
@@ -47,43 +49,89 @@
     <label for="personagemSelect">Escolha um personagem:</label>
     <button class="botao" onclick="exibirFotoEFrase()">Exibir</button>
     <br><br>
-    <select id="personagemSelect"> 
-      <option class="teste"value="Arthur">Arthur Morgan</option>
-      <option value="Luigi">Luigi</option>
-      <option value="Peach">Peach</option>
+    <select id="personagemSelect">
+        <option class="teste" value="Arthur">Arthur Morgan</option>
+        <option value="Luigi">Luigi</option>
+        <option value="Peach">Peach</option>
     </select>
     <br><br>
-    
+
 </body>
+
 </html>
 
 <script>
- // Vetor de personagens com suas fotos
-const personagens = [
-  { nome: "Arthur", foto: "assets/imgs/arthur_morgan.png", frase: "It's-a me, Arthur Morgan!" },
-  { nome: "Luigi", foto: "luigi.jpg" },
-  { nome: "Peach", foto: "peach.jpg" }
-];
+    // Vetor de personagens com suas fotos
+    const personagens = [
+        { nome: "Arthur", foto: "assets/imgs/arthur_morgan.png", frase: "It's-a me, Arthur Morgan!" },
+        { nome: "Luigi", foto: "luigi.jpg" },
+        { nome: "Peach", foto: "peach.jpg" }
+    ];
 
-// Função para exibir a foto do personagem
-function exibirFotoEFrase() {
-  // Obtendo a escolha do usuário
-  const select = document.getElementById("personagemSelect");
-  const escolha = select.value;
+    // Função para exibir a foto do personagem
+    function exibirFotoEFrase() {
+        // Obtendo a escolha do usuário
+        const select = document.getElementById("personagemSelect");
+        var escolha = select.value;
 
-  // Exibindo a foto correspondente
-  const imagem = document.getElementById("fotoPersonagem");
+        // Exibindo a foto correspondente
+        const imagem = document.getElementById("fotoPersonagem");
 
-  // Buscando o personagem no vetor
-  const personagem = personagens.find(p => p.nome === escolha);
+        // Buscando o personagem no vetor
+        const personagem = personagens.find(p => p.nome === escolha);
 
-  // Verificando se o personagem foi encontrado
-  if (personagem) {
-    imagem.src = personagem.foto;
-    imagem.alt = `Foto do ${personagem.nome}`;
-    const fraseElement = document.getElementById("frasePersonagem");
-    fraseElement.textContent = personagem.frase;
-  }
-}
+        // Verificando se o personagem foi encontrado
+        if (personagem) {
+            imagem.src = personagem.foto;
+            imagem.alt = `Foto do ${personagem.nome}`;
+            const fraseElement = document.getElementById("frasePersonagem");
+            fraseElement.textContent = personagem.frase;
+        }
+
+
+
+        // nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+        var idUsuario = sessionStorage.ID_USUARIO;
+
+
+        if (escolha == "") {
+            // cardErro.style.display = "block"
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+            // finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(5000);
+        }
+
+
+        fetch("/personagem/exibirFotoEFrase", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                escolhaServer: escolha,
+                fkUsuarioServer: idUsuario
+
+
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+
+        return false;
+
+    }
 
 </script>

@@ -100,48 +100,51 @@ body {
   justify-content: left;
 }
 
-
-.usuario h1 {
-  color: #c00;
-  text-align: center;
-
-}
-
-.usuario p {
-  color: white;
-  text-align: center;
-  text-align: center;
-  padding-bottom: 30px;
-  width: 665px;
-  font-size: 18px;
-  margin-left: 25%;
-
-}
-
-span {
-  color: goldenrod;
-}
-
-.titulo_img img {
-  border-radius: 50%;
-}
-
 ::-webkit-scrollbar {
-  width: 10px;
-}
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c00;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(204, 0, 0, 0.562);
+  }
 
-::-webkit-scrollbar-track {
-  background-color: black;
-}
+  .titulo_img img {
+    border-radius: 50%;
+  }  
 
-::-webkit-scrollbar-thumb {
-  background-color: #c00;
-}
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(204, 0, 0, 0.562);
-}
+  /* dashboard */
 
-span {
-  margin-top: 2.06rem;
-}
+
+  .janela {
+    display: flex;
+    width: 100%;
+  }
+  
+  .dash-right {
+    height: 65vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  } 
+  .graph {
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  canvas {
+    width: 50vh;
+    height: 100%;
+  }

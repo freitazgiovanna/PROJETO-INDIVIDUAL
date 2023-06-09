@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RDR II | USUÁRIO</title>
+
+    <link rel="icon" href="assets/imgs/logo.png">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body onload="obterDadosGrafico()">
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
+            <ul class="navbar"></a>
+                <li>
+                    <a href="usuario.html">USUÁRIO</a>
+                    <ul>
+                        <li><a href="armas.html">armas</a></li>
+                        <li><a href="animais.html">animais</a></li>
+                        <li><a href="momentos.html">momentos</a></li>
+                        <li><a href="trilhasonora.html">trilha sonora</a></li>
+                    </ul>
+                </li>
+                <li>|</li>
+                <li class="agora">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="quiz.html">SEU PERSONAGEM</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="index.html">SAIR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="janela">
+        <div class="dash-right">
+            <div class="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+    function obterDadosGrafico() {
+        fetch("/grafico/ultimas/", { cache: "no-store" })
+            .then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        plotarDadosGrafico(resposta);
+                    });
+                } else {
+                    console.error("Nenhum dado encontrado ou erro na API");
+                }
+            })
+            .catch(function (error) {
+                console.error(
+                    `Erro na obtenção dos dados p/ gráfico: ${error.message}`
+                );
+            });
+    }
+
+    function plotarDadosGrafico(dados) {
+        var data = [];
+        var labels = [];
+        var cores = ["#d83198", "#3b9d17c2", "#d83198c0", "#3b9d17"];
+
+        for (var i = 0; i < dados.length; i++) {
+            data.push(dados[i].quantidade);
+            labels.push(dados[i].nomePersonagem);
+        }
+
+        console.log("data ", data)
+        console.log("labels ", labels)
+
+
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels,
+                datasets: [{
+                    label: 'Personagens',
+                    data,
+                    fill: false,
+                    backgroundColor: cores,
+                    borderWidth: 1,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                options: {
+                    scales: {} // Define as escalas vazias
+                }
+            }
+        });
+
+    }
+</script>
