@@ -15,8 +15,8 @@
 
     <div class="header">
         <div class="container">
-            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
-                Olá,usuário!</a>
+            <a href="usuario.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li>
                     <a href="momentos.html">momentos</a>
@@ -33,6 +33,10 @@
                 </li>
                 <li>|</li>
                 <li>
+                    <a href="dashboard.html">DASHBOARD</a>
+                </li>
+                <li>|</li>
+                <li>
                     <a href="index.html">SAIR</a>
                 </li>
             </ul>
@@ -42,7 +46,7 @@
 
 
 
-
+<div class="teste">
     <h1>Escolha de Personagem</h1>
     <img id="fotoPersonagem" style="width: 300px;">
     <p id="frasePersonagem"></p>
@@ -51,9 +55,16 @@
     <br><br>
     <select id="personagemSelect">
         <option class="teste" value="Arthur">Arthur Morgan</option>
-        <option value="Luigi">Luigi</option>
-        <option value="Peach">Peach</option>
+        <option class="teste" value="Dutch">Dutch Van Der Linde</option>
+        <option class="teste" value="John">John Marston</option>
+        <option class="teste" value="Hosea">Hosea Matthews</option>
+        <option class="teste" value="Sadie">Sadie Adler</option>
+        <option class="teste" value="Lenny">Lenny Summers</option>
+        <option class="teste" value="Javier">Javier Escuella</option>
+        <option class="teste" value="Micah">Micah Bell</option>
+        <option class="teste" value="Charles">Charles Smith</option>
     </select>
+</div>
     <br><br>
 
 </body>
@@ -63,9 +74,15 @@
 <script>
     // Vetor de personagens com suas fotos
     const personagens = [
-        { nome: "Arthur", foto: "assets/imgs/arthur_morgan.png", frase: "It's-a me, Arthur Morgan!" },
-        { nome: "Luigi", foto: "luigi.jpg" },
-        { nome: "Peach", foto: "peach.jpg" }
+        { nome: "Arthur", foto: "assets/personagem/arthur.jfif", frase: "Assim como Arthur Morgan, você possui uma personalidade corajosa e determinada, enfrentando os desafios da vida de forma destemida." },
+        { nome: "Dutch", foto: "assets/personagem/dutch.jfif", frase: "Como Dutch van der Linde, você é uma pessoa carismática e persuasiva, com uma visão grandiosa do mundo. Sua habilidade de liderança e capacidade de inspirar outros são admiráveis." },
+        { nome: "John", foto: "assets/personagem/john.jfif", frase: "Assim como John Marston, você é uma pessoa resiliente e determinada, disposta a lutar pelo que acredita e buscar a redenção, mesmo diante das adversidades." },
+        { nome: "Hosea", foto: "assets/personagem/hosea.jfif", frase: "Assim como Hosea Matthews, você é uma pessoa sábia, perspicaz e com um jeito encantador. Sua capacidade de encontrar soluções criativas e seu espírito conciliador são qualidades que conquistam a confiança e o respeito daqueles ao seu redor." },
+        { nome: "Sadie", foto: "assets/personagem/sadie.jpg", frase: "Como Sadie Adler, você é uma pessoa corajosa e determinada, pronta para enfrentar qualquer desafio de frente. Sua força interior e sua determinação em buscar justiça são inspiradoras, tornando você uma verdadeira lutadora." },
+        { nome: "Lenny", foto: "assets/personagem/lenny.jfif", frase: "Assim como Lenny Summers, você é uma pessoa jovem e otimista, com uma visão positiva da vida. Sua amizade leal e seu entusiasmo contagiam aqueles ao seu redor, trazendo um toque de leveza e alegria mesmo nos momentos mais difíceis."},
+        { nome: "Javier", foto: "assets/personagem/javier.jfif", frase: "Assim como Javier Escuella, você é uma pessoa de lealdade e habilidades notáveis. Sua determinação e dedicação em proteger aqueles que ama são admiráveis, tornando você um verdadeiro protetor e defensor dos ideais que acredita." },
+        { nome: "Micah", foto: "assets/personagem/micah.png", frase: "Assim como Micah Bell, você possui uma personalidade intensa e destemida. Sua determinação em alcançar seus objetivos pode ser admirável, mas é importante estar atento para que sua ambição não o leve por caminhos obscuros." },
+        { nome: "Charles", foto: "assets/personagem/charles.jfif", frase: "Assim como Charles Smith, você é uma pessoa leal e solidária, sempre disposta a ajudar aqueles que estão ao seu redor. Sua conexão com a natureza e sua habilidade em encontrar harmonia são qualidades que trazem equilíbrio e paz para sua vida e para os outros."}
     ];
 
     // Função para exibir a foto do personagem
@@ -134,4 +151,5 @@
 
     }
 
+    nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 </script>

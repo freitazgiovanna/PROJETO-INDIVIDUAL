@@ -17,8 +17,8 @@
     <!-- Header -->
     <div class="header">
         <div class="container">
-            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
-                Olá,usuário!</a>
+            <a href="usuario.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li class="agora">
                     <a href="trilhasonora.html">trilha sonora</a>
@@ -32,6 +32,10 @@
                 <li>|</li>
                 <li>
                     <a href="quiz.html">seu personagem</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="dashboard.html">DASHBOARD</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -56,11 +60,11 @@
     </div>
     <br><br><br><br>
     <div class="botao">
-        <a href='quiz.html'><button class="botao_membro" onclick="membro()">SEU PERSONAGEM</button></a>  
-      </div>
+        <a href='quiz.html'><button class="botao_membro" onclick="membro()">SEU PERSONAGEM</button></a>
+    </div>
 
-      <script>
-        
+    <script>
+
         nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
-      </script>
+    </script>

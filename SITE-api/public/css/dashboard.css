@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: 'Chinese Rocks Rg', sans-serif;
   background-color: black;
+  background-image: url(../assets/imgs/fundo_preto_vermelho.jpg);
 }
 
 :root {
@@ -83,7 +84,6 @@ body {
 }
 
 .navbar {
-  width: 25%;
   margin-right: 2%;
   list-style: none;
   display: flex;
@@ -101,50 +101,59 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: black;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #c00;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(204, 0, 0, 0.562);
-  }
+  width: 10px;
+}
 
-  .titulo_img img {
-    border-radius: 50%;
-  }  
+::-webkit-scrollbar-track {
+  background-color: black;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #c00;
+}
 
-  /* dashboard */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(204, 0, 0, 0.562);
+}
+
+.titulo_img img {
+  border-radius: 50%;
+}
 
 
-  .janela {
-    display: flex;
-    width: 100%;
-  }
-  
-  .dash-right {
-    height: 65vh;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-  } 
-  .graph {
-    display: flex;
-    position: relative;
-    height: 60vh;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  canvas {
-    width: 50vh;
-    height: 100%;
-  }
+/* dashboard */
+
+
+.janela {
+  display: flex;
+  width: 100%;
+}
+
+.dash-right {
+  height: 65vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.graph {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 80%;
+  justify-content: center;
+}
+
+canvas {
+  width: 50vh;
+  height: 100%;
+}
+
+span {
+  margin-top: 2.06rem;
+}
+
+span {
+  color: goldenrod;
+}

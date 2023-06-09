@@ -83,7 +83,6 @@ body {
 }
 
 .navbar {
-  width: 25%;
   margin-right: 2%;
   list-style: none;
   display: flex;
@@ -100,6 +99,13 @@ body {
   justify-content: left;
 }
 
+.usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
 .usuario h1 {
   color: #c00;
@@ -114,8 +120,6 @@ body {
   padding-bottom: 30px;
   width: 665px;
   font-size: 18px;
-  margin-left: 25%;
-
 }
 
 span {

@@ -17,8 +17,8 @@
     <!-- Header -->
     <div class="header">
         <div class="container">
-            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
-                Olá,usuário!</a>
+            <a href="usuario.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li class="agora">
                     <a href="armas.html">armas</a>
@@ -32,6 +32,10 @@
                 <li>|</li>
                 <li>
                     <a href="quiz.html">SEU PERSONAGEM</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="dashboard.html">DASHBOARD</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -75,10 +79,11 @@
             <h3><b>Desempenho, precisão e customização</b></h3>
             <p>Red Dead Redemption permite que você personalize suas armas, alterando aspectos como a coronha, o cano, o
                 acabamento e a mira. Essas opções de customização permitem que você adapte as armas ao seu estilo de
-                jogo e preferências pessoais.Cada arma tem seu próprio desempenho em termos de alcance, precisão, poder de fogo e velocidade de
+                jogo e preferências pessoais.Cada arma tem seu próprio desempenho em termos de alcance, precisão, poder
+                de fogo e velocidade de
                 recarga. Algumas armas são mais adequadas para combates de curta distância, enquanto outras são ideais
                 para tiros de longa distância.</p>
-            </div>
+        </div>
     </div>
 
     <br><br><br><br><br><br>
@@ -100,10 +105,14 @@
                 Por exemplo, em um confronto em um saloon, uma espingarda de cano duplo pode ser mais eficaz, enquanto
                 em um tiroteio a longa distância, um rifle com uma mira precisa pode ser a melhor escolha, lembrando que
                 você pode usar os olhos da morte para maior sucesso.</p>
-            </div>
+        </div>
     </div>
     <br><br><br><br>
     <div class="botao">
-        <a href='quiz.html'><button class="botao_membro" onclick="membro()">SEU PERSONAGEM</button></a>  
-      </div>
-      <br><br><br><br>
+        <a href='quiz.html'><button class="botao_membro" onclick="membro()">SEU PERSONAGEM</button></a>
+    </div>
+    <br><br><br><br>
+
+    <script>
+        nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+    </script>

@@ -17,8 +17,8 @@
     <!-- Header -->
     <div class="header">
         <div class="container">
-            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
-                Olá,usuário!</a>
+            <a href="usuario.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+                Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li class="agora">
                     <a href="momentos.html">momentos</a>
@@ -32,6 +32,10 @@
                 <li>|</li>
                 <li>
                     <a href="quiz.html">SEU PERSONAGEM</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="dashboard.html">DASHBOARD</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -50,14 +54,16 @@
 
     <div class="chamada">
         <h1>Clique no botão e veja quantas imagens de momentos épicos do rdr ii</h1>
+
+        quantas fotos raras você deseja ver? <input id="iput_fotos_raras">
+        <br><br>
+        <button onclick="sortearImagem()" class="botao">
+            Sortear MOMENTOS
+        </button>
+        <div id="imagem"></div>
     </div>
 
-    quantas fotos raras você deseja ver? <input id="iput_fotos_raras">
-
-    <button onclick="sortearImagem()" class="botao">
-        Sortear MOMENTOS
-    </button>
-    <div id="imagem"></div>
+   
 
 
     <script>
@@ -102,5 +108,6 @@
 
         }
 
+        nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     </script>

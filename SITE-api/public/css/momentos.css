@@ -83,7 +83,6 @@ body {
 }
 
 .navbar {
-  width: 25%;
   margin-right: 2%;
   list-style: none;
   display: flex;
@@ -127,7 +126,7 @@ body {
 
 .momentos h1 {
   text-align: center;
-  color:#c00;
+  color: #c00;
   font-size: 45px;
   margin-top: -15%;
 }
@@ -138,25 +137,57 @@ body {
   padding-bottom: 30px;
   width: 665px;
   font-size: 18px;
-  margin-left: 25%;
 }
 
-.chamada h1{
+.momentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.chamada h1 {
   color: white;
   text-align: center;
   padding-bottom: 30px;
   width: 665px;
   font-size: 40px;
-  margin-left: 25%;
   margin-top: 10%;
+  text-shadow: 0px 5px 5px #c00 ;
 }
 
-.botao{
+.chamada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.botao {
   background-color: #c00;
   padding: 10px;
   border-radius: 15px;
   font-size: 30px;
   font-family: "Chinese Rocks Rg", sans-serif;
   width: 300px;
-  margin-left: 39%;
+}
+
+#iput_fotos_raras{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  padding: 5  px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+span {
+  margin-top: 2.06rem;
+}
+
+span {
+  color: goldenrod;
 }

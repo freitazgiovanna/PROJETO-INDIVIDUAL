@@ -1,178 +1,177 @@
 @import url('https://fonts.cdnfonts.com/css/chinese-rocks');
 
 body {
-    /*CSS DA PAGINA INTEIRA*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    background-color: black;
-  }
-  
-  :root {
-    --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-  }
-  
-  .header {
-    height: var(--tamanho-header);
-    background-color: black
-  }
-
-  
-  .header .container {
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: black;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: #c00;
-  }
-  
-  .agora {
-    font-weight: 800;
-  }
-  
-  .navbar {
-    width: 25%;
-    margin-right: 2%;
-    list-style: none;
-    display: flex;
-    justify-content:  space-evenly;
-    align-items: center;
-    color: #c00;
-    height: 100px;
-  }
-  
-  .titulo_img{
-    margin-left: 2%;
-    height: 125%;
-    display: flex;
-    justify-content: left;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-
-  .banner .container img {
-    width: 100%;
-  }
-
-  h2{
-    color: #c00;
-    text-align: center;
-  }
-
-  .box1
-  {
-   display: flex;
-   width: 100%;
-   margin: auto;
-   justify-content: space-evenly;
+  /*CSS DA PAGINA INTEIRA*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  background-color: black;
 }
 
- .texto {
-   width: 300px;
-   font-size: 17px;
- }
+:root {
+  --tamanho-header: 80px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-footer: 65px;
+}
 
- .box1 p {
-   color: white;
-   font-size: 18px;
- }
+.container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
 
- .texto h3 {
-   width: 400px;
-   font-size: 27px;
-   color: #c00;
- }
+.header {
+  height: var(--tamanho-header);
+  background-color: black
+}
 
- .box1 img{
-    width: 115vh;
-    height: 75vh; 
-    
- }
 
- .box1 .texto input {
-    padding: 7px 85px;
-    text-align: center;
-    border: 2px solid #c00;
-    border-radius: 10px;
-    font-family: 'Chinese Rocks Rg', sans-serif;
- }
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
 
- .box1 .texto .botao {
-    background-color: #c00;
-    padding: 7px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    width: 300px;
+.header a {
+  text-decoration: none;
+  color: #c00;
+}
+
+.agora {
+  font-weight: 800;
+}
+
+.navbar {
+  width: 25%;
+  margin-right: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #c00;
+  height: 100px;
+}
+
+.titulo_img {
+  margin-left: 2%;
+  height: 125%;
+  display: flex;
+  justify-content: left;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.banner .container img {
+  width: 100%;
+}
+
+h2 {
+  color: #c00;
+  text-align: center;
+}
+
+.box1 {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.texto {
+  width: 300px;
+  font-size: 17px;
+}
+
+.box1 p {
+  color: white;
+  font-size: 18px;
+}
+
+.texto h3 {
+  width: 400px;
+  font-size: 27px;
+  color: #c00;
+}
+
+.box1 img {
+  width: 115vh;
+  height: 75vh;
+
+}
+
+.box1 .texto input {
+  padding: 7px 85px;
+  text-align: center;
+  border: 2px solid #c00;
+  border-radius: 10px;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+.box1 .texto .botao {
+  background-color: #c00;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+  width: 300px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 200px;
-    align-items: center;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+  color: black;
 }
 
 .card_erro {
-    display: none;
-    background-color:white;
-    color: black;
-    width: 20%;
-    position: fixed;
-    border-radius: 10px;
-    border:#c00 3px solid;
-    padding: 10px;
-    text-align: center;
-    margin-left: 70.4%;
-    margin-top: -5%;
+  display: none;
+  background-color: white;
+  color: black;
+  width: 20%;
+  position: fixed;
+  border-radius: 10px;
+  border: #c00 3px solid;
+  padding: 10px;
+  text-align: center;
+  margin-left: 70.4%;
+  margin-top: -5%;
 }
 
-.header li a{
-  color:#c00;
-  text-decoration:none;
-  padding:5px 10px; 
-  display:block;
+.header li a {
+  color: #c00;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
 }
 
-.header li a:hover{
+.header li a:hover {
   margin-top: 2%;
   background: black;
-  color:goldenrod;
-  -moz-box-shadow:0 3px 10px 0 goldenrod;
-  -webkit-box-shadow:0 3px 10px 0 goldenrod;
-  text-shadow:0px 0px 5px goldenrod;
+  color: goldenrod;
+  -moz-box-shadow: 0 3px 10px 0 goldenrod;
+  -webkit-box-shadow: 0 3px 10px 0 goldenrod;
+  text-shadow: 0px 0px 5px goldenrod;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
-  }
+}
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: black;
-  }
+}
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #c00;
-  }
+}
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: rgba(204, 0, 0, 0.562);
-  }
+}

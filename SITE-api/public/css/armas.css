@@ -84,7 +84,6 @@ body {
 }
 
 .navbar {
-  width: 25%;
   margin-right: 2%;
   list-style: none;
   display: flex;
@@ -111,12 +110,18 @@ body {
   box-sizing: border-box;
   height: 300px;
   padding: 2%;
+  
 
 }
 
 .armas {
   background-image: url(../assets/imgs/fundo_preto_vermelho.jpg);
   margin-top: -1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .armas p {
@@ -127,7 +132,7 @@ body {
   padding-bottom: 30px;
   width: 665px;
   font-size: 18px;
-  margin-left: 25%;
+
 }
 
 .armas img {
@@ -136,7 +141,7 @@ body {
 
 h1 {
   text-align: center;
-  color:goldenrod;
+  color: goldenrod;
 }
 
 .box1 {
@@ -227,4 +232,12 @@ h1 {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(204, 0, 0, 0.562);
+}
+
+span {
+  margin-top: 2.06rem;
+}
+
+span {
+  color: goldenrod;
 }

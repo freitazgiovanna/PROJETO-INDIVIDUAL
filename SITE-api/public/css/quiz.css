@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: 'Chinese Rocks Rg', sans-serif;
   background-color: black;
+  background-image: url(../assets/imgs/fundo_preto_vermelho.jpg)
 }
 
 :root {
@@ -78,7 +79,7 @@ body {
   color: #c00;
 }
 
-#personagemSelect{
+#personagemSelect {
   color: black;
   text-decoration: none;
   padding: 5px 10px;
@@ -86,14 +87,12 @@ body {
 
 }
 
-#personagemSelect:hover{
+#personagemSelect:hover {
   background: black;
   color: goldenrod;
   -moz-box-shadow: 0 3px 10px 0 goldenrod;
   -webkit-box-shadow: 0 3px 10px 0 goldenrod;
   text-shadow: 0px 0px 5px goldenrod;
-  position: absolute;
-  display: block;
   border: 1px solid goldenrod;
 
 }
@@ -103,7 +102,6 @@ body {
 }
 
 .navbar {
-  width: 25%;
   margin-right: 2%;
   list-style: none;
   display: flex;
@@ -140,32 +138,42 @@ body {
   background-color: rgba(204, 0, 0, 0.562);
 }
 
-.botao{
-    background-color: #c00;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 30px;
-    font-family: "Chinese Rocks Rg", sans-serif;
-    width: 300px;
-    position: relative;
-    left: 25%;   
-    
-  }
+.botao {
+  background-color: #c00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: "Chinese Rocks Rg", sans-serif;
+  width: 300px;
+}
 
-  #personagemSelect{
-    font-family: "Chinese Rocks Rg", sans-serif;
-    background-color: #c00;
-    font-size: 25px;
-    position: relative;
-    left: 41%;
-  }
+.teste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
-  #fotoPersonagem{
-    position: relative;
-    left:37%; 
-  }
+#personagemSelect {
+  font-family: "Chinese Rocks Rg", sans-serif;
+  background-color: black;
+  font-size: 25px;
+  color: #c00;
+}
 
-  #frasePersonagem{
-    font-family: "Chinese Rocks Rg", sans-serif;
-    color: white;
-  }
+#frasePersonagem {
+  font-family: "Chinese Rocks Rg", sans-serif;
+  color: white;
+  padding-bottom: 30px;
+  width: 665px;
+  font-size: 25px;
+}
+
+span {
+  margin-top: 2.06rem;
+}
+
+span {
+  color: goldenrod;
+}

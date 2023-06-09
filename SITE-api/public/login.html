@@ -111,6 +111,10 @@
             if (resposta.ok) {
                 console.log(resposta);
 
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Login realizado com sucesso! Redirecionando para tela de Usuario...";
+
                 resposta.json().then(json => {
                     console.log(json);
                     console.log(JSON.stringify(json));
@@ -121,7 +125,7 @@
 
                     setTimeout(function () {
                         window.location = "usuario.html";
-                    }, 1000); // apenas para exibir o loading
+                    }, 2000); // apenas para exibir o loading
 
                 });
 

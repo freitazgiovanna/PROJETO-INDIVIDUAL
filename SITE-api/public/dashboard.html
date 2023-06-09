@@ -18,7 +18,7 @@
     <!-- Header -->
     <div class="header">
         <div class="container">
-            <a href="index.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
+            <a href="usuario.html" class="titulo_img"><img src="assets/imgs/usuario.png"><br><br>&nbsp &nbsp
                 Olá,&nbsp<span id="nome_usuario">usuário!</span></a>
             <ul class="navbar"></a>
                 <li>
@@ -31,12 +31,12 @@
                     </ul>
                 </li>
                 <li>|</li>
-                <li class="agora">
-                    <a href="dashboard.html">Dashboard</a>
-                </li>
-                <li>|</li>
                 <li>
                     <a href="quiz.html">SEU PERSONAGEM</a>
+                </li>
+                <li>|</li>
+                <li class="agora">
+                    <a href="dashboard.html">DASHBOARD</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -47,7 +47,7 @@
     </div>
 
 
-
+<br>
     <div class="janela">
         <div class="dash-right">
             <div class="graph">
@@ -84,7 +84,7 @@
     function plotarDadosGrafico(dados) {
         var data = [];
         var labels = [];
-        var cores = ["#d83198", "#3b9d17c2", "#d83198c0", "#3b9d17"];
+        var cores = ["#8a0808", "#a37a12"];
 
         for (var i = 0; i < dados.length; i++) {
             data.push(dados[i].quantidade);
@@ -117,4 +117,6 @@
         });
 
     }
+
+    nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 </script>
