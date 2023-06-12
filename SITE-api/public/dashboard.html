@@ -47,7 +47,7 @@
     </div>
 
 
-<br>
+    <br>
     <div class="janela">
         <div class="dash-right">
             <div class="graph">
@@ -84,7 +84,7 @@
     function plotarDadosGrafico(dados) {
         var data = [];
         var labels = [];
-        var cores = ["#8a0808", "#a37a12"];
+        var cores = ["#8a0808"];
 
         for (var i = 0; i < dados.length; i++) {
             data.push(dados[i].quantidade);
@@ -95,13 +95,14 @@
         console.log("labels ", labels)
 
 
+
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
             type: 'bar',
-            data: {
+            data:{
                 labels,
                 datasets: [{
-                    label: 'Personagens',
+                    label: 'PERSONAGENS',
                     data,
                     fill: false,
                     backgroundColor: cores,

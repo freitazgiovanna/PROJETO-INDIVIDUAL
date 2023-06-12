@@ -154,7 +154,7 @@ body {
   width: 665px;
   font-size: 40px;
   margin-top: 10%;
-  text-shadow: 0px 5px 5px #c00 ;
+  text-shadow: 0px 5px 5px #c00;
 }
 
 .chamada {
@@ -163,6 +163,10 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
+}
+
+.chamada p {
+  color: white;
 }
 
 .botao {
@@ -174,12 +178,12 @@ body {
   width: 300px;
 }
 
-#iput_fotos_raras{
+#iput_fotos_raras {
   background-color: black;
   color: white;
   text-align: center;
   font-family: "Chinese Rocks Rg", sans-serif;
-  padding: 5  px;
+  padding: 5 px;
   border-radius: 15px;
   font-size: 30px;
 }
@@ -190,4 +194,9 @@ span {
 
 span {
   color: goldenrod;
+}
+
+#mensagem {
+  color: #c00;
+  font-size: 25px;
 }

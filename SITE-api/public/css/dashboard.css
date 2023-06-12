@@ -127,6 +127,8 @@ body {
 .janela {
   display: flex;
   width: 100%;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+
 }
 
 .dash-right {
@@ -135,6 +137,8 @@ body {
   width: 100%;
   justify-content: center;
   position: relative;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+
 }
 
 .graph {
@@ -143,11 +147,14 @@ body {
   height: 60vh;
   width: 80%;
   justify-content: center;
+  font-family: 'Chinese Rocks Rg', sans-serif;
+
 }
 
 canvas {
   width: 50vh;
   height: 100%;
+  font-family: 'Chinese Rocks Rg', sans-serif;
 }
 
 span {
@@ -156,4 +163,8 @@ span {
 
 span {
   color: goldenrod;
+}
+
+#myChart {
+  font-family: 'Chinese Rocks Rg', sans-serif;
 }

@@ -48,30 +48,54 @@
     <div class="momentos">
         <img src="assets/imgs/fundo_preto_vermelho.jpg" alt="">
         <h1>momentos rdr ii</h1>
-        <p>Reviva os momentos épicos e selvagens do Red Dead Redemption 2. Clique aqui e mergulhe na história do Velho
+        <p>Reviva os momentos exclusivos e selvagens do Red Dead Redemption 2. Clique aqui e mergulhe na história do Velho
             Oeste como nunca antes!</p>
     </div>
 
     <div class="chamada">
-        <h1>Clique no botão e veja quantas imagens de momentos épicos do rdr ii</h1>
+        <h1>Clique no botão e veja imagens de momentos exclusivos e fan-art do rdr ii</h1>
 
-        quantas fotos raras você deseja ver? <input id="iput_fotos_raras">
+        <p>quantas fotos você deseja ver?</p><input id="iput_fotos_raras">
         <br><br>
         <button onclick="sortearImagem()" class="botao">
             Sortear MOMENTOS
         </button>
+        <br><br>
         <div id="imagem"></div>
+        <div id="mensagem"></div>
     </div>
-
-   
 
 
     <script>
 
         var listaImagens = [
-            "<img src='assets/imgs_momentos/capa_arthur.jfif' style='width: 200px;'>",
-            "<img src='assets/imgs_momentos/vista_barco.jfif' style='width: 200px;'>"
-
+            "<img src='assets/imgs_momentos/1.jfif' style='width: 300px;'> &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/2.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/3.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/4.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/5.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/6.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/7.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/8.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/9.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/10.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/11.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/12.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/13.png' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/14.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/15.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/16.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/17.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/18.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/19.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/20.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/21.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/22.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/23.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/24.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/25.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/26.jfif' style='width: 300px;'>  &nbsp &nbsp <br>",
+            "<img src='assets/imgs_momentos/27.png' style='width: 300px;'>  &nbsp &nbsp <br>"
         ]
 
         function sortearImagem() {
@@ -88,6 +112,11 @@
 
             var listaImagensSorteadas = [];
             imagem.innerHTML = ""
+            mensagem.innerHTML = ""
+
+            if (qtdImagens > 27 || qtdImagens < 1) {
+                mensagem.innerHTML = `<br>Coloque um número de 1 a 27 para aparecer as imagens.<br><br>`
+            }
 
             if (qtdImagens <= listaImagens.length) {
                 for (var i = 0; i < qtdImagens; i++) {
